@@ -5,7 +5,7 @@ params:
   trilha_clean: modelagem
   turma: 202211-series
   nome_curso: Séries Temporais
-  num_aula: '0'
+  num_aula: '1'
   download_material: 'FALSE'
 ---
 
@@ -80,7 +80,7 @@ pasta <- "exemplos_de_aula/"
 
 knitr::kable(
   tibble::tibble(
-    script = CursoRopen:::list_github_files(params$main_repo, pasta, ".R$"),
+    script = CursoRopen:::list_github_files(params$turma, pasta, ".R$"),
     link = paste0(
       "https://github.com/curso-r/",
       params$turma,
