@@ -64,7 +64,7 @@ erros <- rnorm(N,mean =  1)
 y <- NULL
 y[1] = 1
 
-peso <- 0.5
+peso <- -0.8
 
 for(i in 2:(N+1)){
   y[i] = peso*y[i-1]+erros[i-1]
